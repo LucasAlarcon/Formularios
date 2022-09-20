@@ -1,9 +1,9 @@
 <form action="server_get.php" method="GET">
-    <input type="text" name="Nombre" placeholder="Nombre">
-    <input type="text" name="Apellido" placeholder="Apellido">
-    <input type="date" name="fecha_de_nacimiento" min="1960-01-01" max="2025-05-30" placeholder="fecha">
-    <input type="email" name="Email" placeholder="email">
-    <select name="Pais" id="">
+    <input type="text" name="name" placeholder="Nombre" required>
+    <input type="text" name="surname" placeholder="Apellido" required>
+    <input type="date" name="date_of_birth" min="1960-01-01" max="2025-05-30" placeholder="fecha" required>
+    <input type="email" name="email" placeholder="email" required>
+    <select name="country" id="" required>
         <option value="Argentina">Argentina</option>
         <option value="Brasil">Brasil</option>
         <option value="Paraguay">Paraguay</option>
@@ -12,7 +12,7 @@
         <option value="Bolivia">Bolivia</option>
         <option value="Peru">Peru</option>
     </select>
-    <select name="Provincia" id="">
+    <select name="Province" id="" required>
         <option value="Buenos Aires">Buenos Aires</option>
         <option value="Florianopolis">Florianopolis</option>
         <option value="Asuncion">Asuncion</option>
@@ -20,7 +20,4 @@
         <option value="La Paz">La Paz</option>
     </select>
     <input type="submit" value="enviar">
-    </select>
-</div>
-
 </form>
